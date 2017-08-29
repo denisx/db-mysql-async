@@ -1,0 +1,21 @@
+{
+	"name": "db-mysql-async",
+	"description": "Simple async mysql database wrapper.",
+	"version": "0.0.1",
+	"author": "denisx <nodejs-db-async@denisx.ru> (http://denisx.ru)",
+	"main": "main.js",
+	"scripts": {
+		"lint": "eslint"
+	},
+	"engines": {
+		"node": ">=8.2.1"
+	},
+	"dependencies": {
+		"mysql": "^2.10.2"
+	},
+	"repository": {
+		"type": "git",
+		"url": "denisx/db-mysql-async"
+	},
+	"license": "MIT"
+}
