@@ -22,7 +22,16 @@ class DBMysqlAsync {
 
 	async sql(query) {
 		const connection = await this.getConnection()
-			.catch(err => console.error('Mysql getConnection', err))
+			.catch(err => {
+				if (!err) {
+					return
+				}
+
+				switch (err) {
+					default:
+						console.error('Mysql getConnection error, err=', err)
+				}
+			})
 
 		if (!connection) {
 			return Promise.reject('no connection')
@@ -31,6 +40,7 @@ class DBMysqlAsync {
 		return new Promise((resolve, reject) => {
 			connection.query(query, (err, rows) => {
 				connection.release()
+
 				if (err) {
 					reject(err)
 				} else {
