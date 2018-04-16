@@ -103,9 +103,6 @@ class DBMysqlAsync {
 				resolve(res)
 			})
 		})
-			.catch(err => {
-				console.error(err)
-			})
 	}
 }
 
