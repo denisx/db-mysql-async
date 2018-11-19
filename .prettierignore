@@ -1,0 +1,17 @@
+yarn.lock
+
+build
+__snapshots__
+__mocks__
+
+**/*.png
+**/*.svg
+**/*.jpeg
+**/*.jpg
+**/*.bmp
+
+node_modules
+.gitignore
+.npmignore
+
+.DS_Store
