@@ -1,7 +1,7 @@
 {
     "name": "db-mysql-async",
     "description": "Simple async mysql database wrapper for node.js",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "author": "denisx <nodejs-db-async@denisx.com>",
     "main": "src/server.js",
     "dependencies": {
