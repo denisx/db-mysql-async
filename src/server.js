@@ -9,7 +9,7 @@ const delay = async time =>
     })
 
 class App {
-    constructor({ opts, params: { reconnect, stepInc, stepSumMax } }) {
+    constructor({ opts, params: { reconnect, stepInc, stepSumMax } = {} }) {
         this.pool = mysql.createPool(opts)
 
         this.mustReconnect = reconnect
